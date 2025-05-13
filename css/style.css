@@ -158,4 +158,32 @@ footer nav a:hover {
     font-size: 1em;
     padding: 0.8em 1.2em;
   }
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8em;
+  cursor: pointer;
+  color: white;
 }
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    display: none;
+    background-color: #2b9d74;
+    width: 100%;
+    margin-top: 1em;
+    padding: 1em 0;
+    text-align: center;
+    gap: 1em;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
